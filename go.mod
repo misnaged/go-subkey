@@ -1,4 +1,4 @@
-module github.com/misnaged/go-subkey/v2
+module github.com/misnaged/go-subkey
 
 go 1.24.1
 
