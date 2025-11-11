@@ -1,4 +1,4 @@
-module github.com/vedhavyas/go-subkey/v2
+module github.com/misnaged/go-subkey/v2
 
 go 1.24.1
 
@@ -8,6 +8,7 @@ require (
 	github.com/ethereum/go-ethereum v1.15.5
 	github.com/gtank/merlin v0.1.1
 	github.com/stretchr/testify v1.10.0
+	github.com/vedhavyas/go-subkey/v2 v2.0.0
 	golang.org/x/crypto v0.32.0
 )
 
