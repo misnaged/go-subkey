@@ -23,17 +23,17 @@ type keyRing struct {
 	pub    *sr25519.PublicKey
 }
 type KeyRingPub struct {
-	seed   []byte
-	secret *sr25519.SecretKey
-	pub    *sr25519.PublicKey
+	Seed   []byte
+	Secret *sr25519.SecretKey
+	Pub    *sr25519.PublicKey
 }
 
-func GetKeyRing(pair subkey.KeyPair) *KeyRingPub {
+func GetPubKeyRing(pair subkey.KeyPair) *KeyRingPub {
 	kr := pair.(keyRing)
 	return &KeyRingPub{
-		seed:   kr.seed,
-		secret: kr.secret,
-		pub:    kr.pub,
+		Seed:   kr.seed,
+		Secret: kr.secret,
+		Pub:    kr.pub,
 	}
 }
 func (kr keyRing) Sign(msg []byte) (signature []byte, err error) {
